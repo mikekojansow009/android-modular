@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProfileView">
+        <attr name="fontColor" format="color" />
+        <attr name="fontSize" format="dimension" />
+        <attr name="fontFamilyProfile" format="reference" />
+        <attr name="imageSize" format="dimension" />
+        <attr name="enableEdit" format="boolean"/>
+        <attr name="showName" format="boolean" />
+    </declare-styleable>
+</resources>

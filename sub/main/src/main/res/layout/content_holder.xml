@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/padding_small">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/padding_small"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/padding_small"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica_now_medium"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_subtitle"
+        app:layout_constraintStart_toStartOf="@id/guide_line_start"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="This is some text" />
+
+    <TextView
+        android:id="@+id/tv_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_more"
+        android:textSize="@dimen/text_size_small"
+        android:fontFamily="@font/montserra_regular"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide_line_end"/>
+
+    <com.food.view.viewpager.RatioViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_very_small"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:ratioX="10"
+        app:ratioY="8.5"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

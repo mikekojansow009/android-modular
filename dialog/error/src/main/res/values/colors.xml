@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_gradient_color_error">#FDECEC</color>
+    <color name="error_color">#e57373</color>
+</resources>

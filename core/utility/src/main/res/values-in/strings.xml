@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="good_morning">Selamat Pagi</string>
+    <string name="good_afternoon">Selamat Siang</string>
+    <string name="good_evening">Selamat Sore</string>
+    <string name="good_night">Selamat Malam</string>
+    <string name="hello">Hi</string>
+
+    <string name="format_minutes">%1$d men</string>
+    <string name="format_hour">%1$d jam</string>
+    <string name="format_hours">%1$d jam</string>
+</resources>

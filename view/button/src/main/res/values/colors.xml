@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_button_color">#56F0AC</color>
+    <color name="default_loading_color">#BDF457</color>
+    <color name="image_arrow_color">#A2A2A2</color>
+    <color name="text_color_black">#6A6A6A</color>
+</resources>

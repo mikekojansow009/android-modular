@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Beranda</string>
+    <string name="favorite">Favorit</string>
+    <string name="search">Cari</string>
+    <string name="profile">Akun</string>
+</resources>

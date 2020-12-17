@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_favorite">Let\'s find a yummy recipe now.</string>
+    <string name="find_now">Find Now</string>
+</resources>

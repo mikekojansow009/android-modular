@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account">Account</string>
+    <string name="notification">Notifikasi</string>
+    <string name="preferences">Preferences</string>
+    <string name="about_us">Tentang Kami</string>
+</resources>

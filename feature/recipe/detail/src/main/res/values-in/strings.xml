@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="minutes">Menit</string>
+    <string name="ingredients">Bahan</string>
+    <string name="instructions">Cara Membuat</string>
+</resources>

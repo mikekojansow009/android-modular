@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="skip">Skip</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="title_failed">Failed</string>
+    <string name="title_close">Close</string>
+
+    <string name="login_facebook_error">Cannot log in with Facebook. Please try another method!</string>
+    <string name="login_google_error">Cannot log in with Google. Please try another method!</string>
+    <string name="login_error">Log In failed. Please try again!</string>
+
+    <string name="session_expired">Session Expired</string>
+    <string name="session_expired_msg">Please re-log in!</string>
+</resources>

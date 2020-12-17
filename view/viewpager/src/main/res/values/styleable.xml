@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatioViewPager">
+        <attr name="ratioY" format="float" />
+        <attr name="ratioX" format="float" />
+    </declare-styleable>
+</resources>

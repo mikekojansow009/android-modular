@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_recipe_rounded">8dp</dimen>
+    <dimen name="card_rounded_radius">4dp</dimen>
+    <dimen name="image_favorite_size">40dp</dimen>
+    <dimen name="min_width_total_like">30dp</dimen>
+</resources>

@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+androidExtensions {
+    experimental = true
+}
+
+android {
+    compileSdkVersion sdk_version
+    buildToolsVersion build_version
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion sdk_version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation depends.androidx.core
+    implementation depends.androidx.appcompat
+    implementation depends.androidx.views.constraintLayout
+
+    implementation depends.coroutine
+    implementation depends.dagger.core
+    kapt depends.dagger.compiler
+
+    implementation depends.dagger.core
+    kapt depends.dagger.compiler
+
+    implementation depends.coil
+
+    implementation project(path: ':core:base')
+    implementation project(path: ':core:dependency')
+    implementation project(path: ':core:database')
+    implementation project(path: ':core:network')
+    implementation project(path: ':core:preferences')
+    implementation project(path: ':core:repository')
+    implementation project(path: ':core:utility')
+    implementation project(path: ':view:button')
+    implementation project(path: ':view:userprofile')
+}

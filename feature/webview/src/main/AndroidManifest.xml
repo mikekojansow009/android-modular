@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.food.feature.webview">
+
+    <application>
+        <activity android:name=".WebViewActivity"
+            android:theme="@style/Theme.ActionBar.White">
+            <intent-filter>
+                <action android:name="feature.web.view" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

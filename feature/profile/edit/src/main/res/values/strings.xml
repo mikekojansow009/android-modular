@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="name">Name</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="phone">Phone</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="about_me">About Me</string>
+    <string name="logout">Log Out</string>
+    <string name="save">Save</string>
+    <string name="success">Success</string>
+    <string name="Failed">Failed</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="logout_message_dialog">Do you want to log out?</string>
+</resources>

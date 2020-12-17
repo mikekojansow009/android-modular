@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_profile">Ganti Profile</string>
+    <string name="name">Nama</string>
+    <string name="phone">Phone</string>
+    <string name="birthdate">Tanggal Lahir</string>
+    <string name="about_me">Tentang Saya</string>
+    <string name="logout">Keluar</string>
+    <string name="save">Simpan</string>
+    <string name="success">Sukses</string>
+    <string name="Failed">Gagal</string>
+    <string name="update_profile">Ganti akun</string>
+    <string name="logout_message_dialog">Apakah Anda ingin keluar?</string>
+</resources>

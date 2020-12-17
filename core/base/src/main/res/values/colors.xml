@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="text_black">#202020</color>
+    <color name="text_black_40">#4a4a4a</color>
+    <color name="text_gray">#8A8A8A</color>
+    <color name="transparent_color">#00FFFFFF</color>
+    <color name="background_color_gray_60_percent">#99e8e8e8</color>
+
+    <color name="white_background">#F2F2F2</color>
+
+    <color name="text_black_trans_60">#994e4e4e</color>
+
+    <color name="base_translucent_black">#2B2B2B</color>
+
+    <color name="base_black">#000</color>
+
+    <color name="blue_sky">#A0CEFF</color>
+
+    <color name="facebook_color">#2C69DB</color>
+    <color name="google_color">#BF4D3B</color>
+</resources>

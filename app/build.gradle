@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.google.firebase.crashlytics'
+
+def BASE_API_URL = "BASE_API_URL"
+def ONE_SIGNAL_ID = "ONE_SIGNAL_ID"
+
+repositories {
+    jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion sdk_version
+    buildToolsVersion build_version
+
+    defaultConfig {
+        applicationId "com.food.recipe"
+        minSdkVersion 21
+        targetSdkVersion sdk_version
+        versionCode 2
+        versionName "1.0"
+
+        buildConfigField STRING, ONE_SIGNAL_ID, '""'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".test"
+            buildConfigField STRING, BASE_API_URL, '""'
+            manifestPlaceholders = [facebook_app_id: ""]
+
+            firebaseCrashlytics {
+                mappingFileUploadEnabled false
+            }
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField STRING, BASE_API_URL, '""'
+            manifestPlaceholders = [facebook_app_id: ""]
+        }
+
+        firebaseCrashlytics {
+            // Enable processing and uploading of native symbols to Crashlytics servers.
+            // By default, this is disabled to improve build speeds.
+            // This flag must be enabled to see properly-symbolicated native
+            // stack traces in the Crashlytics dashboard.
+            nativeSymbolUploadEnabled true
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.1'
+    }
+
+    packagingOptions {
+        exclude("META-INF/*.kotlin_module")
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation depends.androidx.core
+    implementation depends.androidx.appcompat
+    implementation depends.androidx.views.constraintLayout
+    implementation depends.facebook
+
+    implementation depends.google.core
+    implementation depends.google.crashlytic
+    implementation depends.google.analytics
+
+    implementation project(path: ':core:base')
+    implementation project(path: ':core:firebase')
+    implementation project(path: ':core:dependency')
+    implementation project(path: ':core:preferences')
+    implementation project(path: ':core:utility')
+    implementation project(path: ':feature:splash')
+    implementation project(path: ':feature:login')
+    implementation project(path: ':feature:home')
+    implementation project(path: ':feature:profile:edit')
+    implementation project(path: ':feature:recipe:detail')
+    implementation project(path: ':feature:recipe:list')
+    implementation project(path: ':feature:webview')
+
+    implementation project(path: ':thirdparty:onesignal')
+}
+
+apply plugin: 'com.google.gms.google-services'

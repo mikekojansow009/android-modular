@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/navigation_item_scene">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/default_icon_navigation_size"
+        android:layout_height="@dimen/default_icon_navigation_size"
+        android:layout_marginTop="@dimen/padding_very_small"
+        app:layout_constraintBottom_toTopOf="@id/tv_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginBottom="@dimen/padding_very_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon"
+        tools:text="Item" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_height_button">45dp</dimen>
+    <dimen name="default_rounded_button">8dp</dimen>
+    <dimen name="default_button_elevation">4dp</dimen>
+</resources>

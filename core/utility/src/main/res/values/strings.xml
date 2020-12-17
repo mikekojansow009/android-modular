@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="good_morning">Good Morning</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_evening">Good Evening</string>
+    <string name="good_night">Good Night</string>
+    <string name="hello">Hello</string>
+
+    <string name="format_minutes">%1$d min</string>
+    <string name="format_hour">%1$d hour</string>
+    <string name="format_hours">%1$d hours</string>
+</resources>

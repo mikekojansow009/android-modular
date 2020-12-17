@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="skip">Lewati</string>
+    <string name="login_with_facebook">Masuk dengan Facebook</string>
+    <string name="login_with_google">Masuk dengan Google</string>
+    <string name="title_failed">Gagal</string>
+    <string name="title_close">Tutup</string>
+
+    <string name="login_facebook_error">Tidak dapat masuk dengan Facebook! Silahkan coba dengan metode yang lain</string>
+    <string name="login_google_error">Tidak dapat masuk dengan Google! Silahkan coba dengan metode yang lain</string>
+    <string name="login_error">Login gagal. Silahkan coba kembali</string>
+
+    <string name="session_expired">Sesi Kadaluarsad</string>
+    <string name="session_expired_msg">Silahkan login kembali!</string>
+</resources>

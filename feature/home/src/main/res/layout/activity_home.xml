@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_line"
+        />
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@id/item_home"/>
+
+    <com.food.view.menuicon.NavigationMenuItem
+        android:id="@+id/item_home"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_navigation_height"
+        android:background="@color/white"
+        app:backgroundItemSelectedColor="@android:color/transparent"
+        app:imageSource="@drawable/ic_breakfast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:text="@string/home"
+        app:textColor="@color/text_black_trans_60"
+        app:textSelectedColor="@color/text_black" />
+
+    <com.food.view.menuicon.NavigationMenuItem
+        android:id="@+id/item_favorite"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_navigation_height"
+        android:background="@color/white"
+        app:backgroundItemSelectedColor="@android:color/transparent"
+        app:imageSource="@drawable/ic_recommended_food"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_search"
+        app:layout_constraintStart_toEndOf="@id/item_home"
+        app:text="@string/favorite"
+        app:textColor="@color/text_black_trans_60"
+        app:textSelectedColor="@color/text_black" />
+
+    <com.food.view.menuicon.NavigationMenuItem
+        android:id="@+id/item_search"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_navigation_height"
+        android:background="@color/white"
+        app:backgroundItemSelectedColor="@android:color/transparent"
+        app:imageSource="@drawable/ic_search_recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_profile"
+        app:layout_constraintStart_toEndOf="@id/item_favorite"
+        app:text="@string/search"
+        app:textColor="@color/text_black_trans_60"
+        app:textSelectedColor="@color/text_black" />
+
+    <com.food.view.menuicon.NavigationMenuItem
+        android:id="@+id/item_profile"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_navigation_height"
+        android:background="@color/white"
+        app:backgroundItemSelectedColor="@android:color/transparent"
+        app:imageSource="@drawable/ic_profile_chef"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_search"
+        app:text="@string/profile"
+        app:textColor="@color/text_black_trans_60"
+        app:textSelectedColor="@color/text_black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
